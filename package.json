@@ -4,7 +4,8 @@
   "description": "",
   "main": "js/scripts.js",
   "scripts": {
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "c": "node-sass scss/styles.scss css/styles.css"
   },
   "keywords": [
     "portfolio",
@@ -27,5 +28,8 @@
     "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.2",
     "gulp-wait": "0.0.2"
+  },
+  "dependencies": {
+    "each-props": "^2.0.0"
   }
 }
