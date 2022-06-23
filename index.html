@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <script type="text/javascript" src="js/typewriter.js" content-type= "application/javascript;charset=utf-8">
+    </script>
 </head>
 
 <body>
@@ -52,7 +54,8 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Felix Fu</h1>
-            <h2>Software Engineer</h2>
+            <p style="font-size:30px">&#127936;👨‍💻&#129406;&#128218;</i></p>
+            <h2><div id="app"></div></h2>
             <a href="./res/my_CV.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -67,7 +70,6 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
-
     <div id="about">
         <div class="container">
             <div class="row">
@@ -76,9 +78,11 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        I'm an undergraduate student pursuing an Honours Bsc. degree at the <a href="https://www.ubc.ca">UBC</a>. My current summer work involves developing bioinformatic <a href="https://snakemake.readthedocs.io/en/stable/index.html">pipelines</a>  to process high dimensional sequencing data, using 
+                        Probabilistic Programming <a href="https://pyro.ai/">(Pyro)</a> for Bayesian modeling to create data visulization. MCMC and VI are used to address the intractable integrals common in Bayesian inference.
+                        <br>
+                        <br/> 
+                        My favorite sport is basketball. I love to cook, go hiking, watch movies/series/NBA games in my spare time.
                     </p>
                 </div>
             </div>
@@ -89,33 +93,54 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+            <div data-date="May 2022 – September 2022">
+                <h3>Summer Student - <a href="https://www.cs.ubc.ca/students/undergrad/research-and-conferences/undergraduate-student-research-awards">USRA</a> </h3>
+                <h4><a href="https://www.bccrc.ca/dept/mo/labs/roth-lab">Roth lab, Molecular Oncology Department, BC Cancer Centre</a></h4>
+                <ul>
+                    <li>Developing a Bayesian model for analyzing cfDNA to estimate tumor fractions with graduate students. The model estimates the relative proportions of existing clones, and discover emergences of novel clones based on copy-number profiles.</li>
+                    <li>Applied the model to real world data from a cohort of 10 patients with matched primary tumour sequencing and longitudinal cfDNA sequencing.</li>
+                    <li>Refined the graphic model and implemented by PPL.</li>
+                    <li>Deployed jobs on HPC and introduce parallelized workflows using Snakemake as well as making data analysis scalable and reproducible. </li>
+                </ul>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+
+
+            <div data-date="January 2021 – December 2021">
+                <h3>Undergraduate Teaching Assistant</h3>
+                <h4>UBC Department of Computer Science - CPSC210 (2 winter terms)</h4>
+                <ul>
+                    <li>Design, development, and analysis of robust software components. Topics such as software design, computational models, data structures, debugging, and testing.</li>
+                    <li> Received excellent evaluation scores and favorable feedback
+                        from <b>30+</b>  students in preparedness and teaching quality.</li>
+                    <li>Helped students to build and debug their projects in Java
+                            heuristically. Promoted the necessity of adhering design patterns during software construction.</li>
+                    <li>Led 30-student labs both online and in-person and held customized recap or Q&A session. Relayed common problems
+                        and demands to professors.</li>
+                </ul>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+            <div data-date="July 2021 - August 2021">
+                <h3>Research Intern - <a href="http://english.ia.cas.cn/">CASIA</a> </h3>
+                <h4>The State Key Laboratory of Management and Control for Complex Systems</h4>
+                <ul>
+                    <li>Engaged in deep reinforcement learning <a href="https://github.com/DRL-CASIA/CASIA-DRL-Content">(DRL)</a> group meetings in different orientations. Gained a comprehensive understanding of DRL and its significant role in computer vision,
+                        autonomous driving and neural architecture search etc.</li>
+                    <li>Learnt to construct computational graph and derived backpropagation method for calculating gradient. Evaluated the efficiency of several optimization methods (Momentum, Adam,
+                        AdaGrad) for SGD and regularization such as Dropout.</li>
+                </ul>
             </div>
-        </div>
+
+            <div data-date="January 2021 - June 2021">
+                <h3>Lab Assistant </h3>
+                <h4>School of Automation at WHUT</h4>
+                <ul>
+                    <li>Learnt about adaptive multi-task Probabilistic Movement Primitives in robot skill learning. Proofread and curated related documents.</li>
+                    <li>Learnt about Gaussian Mixture Model and contributed to a <a href="https://ieeexplore.ieee.org/document/9548924/keywords#keywords">paper</a> that had been published fortunately.</li>
+                </ul>
+            </div>
     </div>
     <!-- End #experience -->
-
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
@@ -123,26 +148,23 @@
             <span class="education-date">Sept 2019 - May 2023</span>
             <h4>Bachelor of Science in Honours Computer Science</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                Learn how to use and improve computers while exploring topics such as databases and operating systems, software engineering, security, web development, and numerical methodology. Computer Science gives me a thorough grounding in computer software design, and a broad choice of other studies in computing.
             </p>
+
+            <p>
+                <br>
+                <b>Courses taken:</b> 
+            </p>
+            <ul>
+                <li>asdf</li>
+            </ul>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
+            <h3>Hubei Wuchang Experimental High School</h3>
+            <span class="education-date">Sept 2015 - Sept 2018</span>
+            <h4></h4>
         </div>
         <!-- End .education-block -->
     </div>
@@ -151,28 +173,41 @@
     <div id="achievements" class="background-alt">
         <h2 class="heading">Achievements & Awards</h2>
         <div id="achievements-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="May 2022">
+                <h3>Work Learn International Undergraduate Research Awards</h3>
+                <h4>Department of Computer Science, Faculty of Science, UBC</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+                    The Work Learn International Undergraduate Research Awards are designed for international undergraduate students who are interested in research. This is equivalent to NSERC award for domestic students.
+<br>
+These awards subsidize professors to hire students to work on their research projects. International students who receive the awards gain workplace experience through an undergraduate research opportunity.</p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="October 2020, August 2021">
+                <h3>Trek Excellence Scholarship</h3>
+                <h4>Faculty of Science, UBC</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+                    <b>Grant value: $4000</b> <br>
+                    Trek Excellence Scholarships are offered every year to students in the top 5% of their undergraduate year, faculty, and school. Domestic students receive an award of $1,500 and international students receive an award of $4,000. Awards of $1,000 are also given to international students who are in the top 5% to 10%.</p>
+            </div>
+            
+            <div data-date="September 2021">
+                <h3>J Fred Muir Memorial Scholarship</h3>
+                <h4>Faculty of Science, UBC</h4>
+                <p>
+                    Scholarships totalling $32,000 have been endowed through a bequest in memory of J. F. Muir by Lillian Muir. The awards are offered to students in the Faculty of Science on the recommendation of the Faculty.                </p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="December 2020, November 2021">
+                <h3>Faculty of Science International Student Scholarship</h3>
+                <h4> Faculty of Science, UBC</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+                  <b>Grant value: $10000</b>   <br> To recognize international students in the Faculty of Science who “demonstrate strong academic achievement, engagement in the Faculty, and the potential to make a scholarly contribution within their chosen field of study.”                </p>
+            </div>
+
+            <div data-date="May 2020, 2021, 2022">
+                <h3>Science Scholar/Dean's Honour List</h3>
+                <h4>Faculty of Science, UBC</h4>
+                <p>Students promoted to second, third, or fourth year with a standing of 90% or better in the previous Winter Session will receive the notation "Science Scholar" on their records if they passed all courses completed and carried a course load of at least 27 percentage-graded credits.</p>
             </div>
         </div>
     </div>
@@ -184,15 +219,16 @@
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/pulsar.jpeg" style="width: 15vw; height: 22vh;"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>Identify Pulsar Stars utilizing KNN classification model</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                            Pulsars are intensively magnetized, rapidly rotating neutron stars that emit periodic radio frequencies. I preprocessed the dataset HTRU2 and trained
+                            the KNN classifier through cross-validation following the pipeline. At last, I visualized the distribution of original data by ggplot2 and evaluated performance of classifier via confusion matrix.
                         </p>
-                        <a href="#">View Project</a>
+                        <a href="https://github.com/felix-yuxiang/DataScience-Project-PulsarStar">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -200,15 +236,48 @@
 
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/project.jpg" />
+                        <img src="images/thumb-services-free-service.gif" />
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Project Name Here</h3>
+                        <h3>University Student Center</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
+                            An application that mimics <i>UBC Student Service Center</i> with HTML parser.
+                            This is an interactive platform where students
+                            could view schedule; edit courses; view grades
+                            and teaching assistants can create, grade assignments for all students                        </p>
+                        <a href="https://github.com/felix-yuxiang/University_Service_Center_App">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/park.jpg" style="width: 15vw; height: 22vh;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Amusement Park Management System</h3>
+                        <p>
+                            APMS concentrates on the domain of theme parks (amusement parks). The database of our project models the employment, logistics, and ticket services of the park.                        
+                        The whole project is built on Django framework and SQLite. We initiated with a comprehensive ER diagram respect to the staff and facilities in the park and normalized all the relation schemas in BCNF
+                        to reduce redundancy.</p>
+                        <a href="https://github.com/felix-yuxiang/APMS">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/ubc.jpg" style="width: 15vw; height: 22vh;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Insight Facade at UBC</h3>
+                        <p>
+                            A full-stack web application with front-end bootstrapped by <a href="https://getbootstrap.com/docs/4.0/components/jumbotron/">Jumbotron</a>. Devised Mocha unit test suite and the code passed eslint. Invoke the paradigm of asynchronous programming (i.e. properly handling promises). A back-end server implemented by Typescript to parse the designated queries about courses, buildings and rooms inside UBC. Followed the SOLID design principles and established final RESTful APIs.</p>
+                        <a href="https://github.com/felix-yuxiang/APMS">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -274,7 +343,7 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://felix-yuxiang.github.io/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/felix-yuxiang/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
                             <a href="https://discordapp.com/users/796797977980829696" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
@@ -294,6 +363,26 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript">
+        var app = document.getElementById('app');
+        
+        var typewriter = new Typewriter(app, {
+            loop: true
+        });
+        
+        typewriter.typeString('>>> I am interested in Computer Science')
+            .pauseFor(2500)
+            .deleteChars(16)
+            .typeString('mathematics and statistics.')
+            .pauseFor(2500)
+            .deleteChars(46)
+            .typeString('Regard myself as a ML enthusiast and a developer!')
+            .pauseFor(2500)
+            .deleteChars(49)
+            .typeString('I\'m a 4th year @UBC')
+            .pauseFor(2500)
+            .start();
+        </script>
 </body>
 
 </html>

@@ -441,7 +441,8 @@ footer {
 #education {
   padding: 50px 15px 20px 15px;
   border-bottom: 1px solid #dcd9d9;
-  text-align: center; }
+  text-align: center;
+  background: #fff; }
   #education h2 {
     color: #374054;
     margin-bottom: 50px; }
@@ -480,12 +481,13 @@ footer {
 #projects {
   padding: 50px 15px;
   border-bottom: 1px solid #dcd9d9;
-  text-align: center; }
+  text-align: center; 
+  background: #fff;}
   #projects h2 {
     color: #374054;
     margin-bottom: 50px; }
     #projects h2::after{
-      background: #f09a54;;
+      background: #f09a54;
     }
 
 .project {
@@ -514,6 +516,9 @@ footer {
     color: #74808a;
     margin: 0 0 15px 0;
     font-size: 0.9em; }
+  .project-info a {
+    color: #f09a54;
+  }
 
 .no-image .project-info {
   position: relative;
