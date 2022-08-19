@@ -79,8 +79,8 @@
                 <div class="col-md-8">
                     <p>
                         I'm an undergraduate student pursuing an Honours Bsc. degree at the <a href="https://www.ubc.ca">UBC</a>. My current summer work involves developing bioinformatic <a href="https://snakemake.readthedocs.io/en/stable/index.html">pipelines</a>  to process high dimensional sequencing data, using 
-                        Probabilistic Programming (<a href="https://pyro.ai/">Pyro</a>/<a href="https://www.pymc.io/welcome.html">PyMC</a>) for Bayesian modeling to infer clone population based on genomic alteration profiles extracted from ctDNA. MCMC and VI are used to address the intractable integrals common in Bayesian inference. PPL makes the implementation of graphical model efficient.
-                        A side project is quality control for imaging mass cytometry (IMC) data.
+                        Probabilistic Programming (<a href="https://pyro.ai/">Pyro</a>/<a href="https://www.pymc.io/welcome.html">PyMC</a>) for Bayesian modeling to infer clone population based on genomic alteration profiles (CNA, SNV) extracted from ctDNA. MCMC and VI are used to address the intractable integrals common in Bayesian inference. PPL makes the implementation of graphical model efficient.
+                        A side project is quality control for imaging mass cytometry (IMC) data using a Bayesian model.
                         <br>
                         <br/> 
                         My favorite sport is basketball. I love to cook, go hiking, watch movies/series/NBA games in my spare time.
@@ -224,21 +224,19 @@ These awards subsidize professors to hire students to work on their research pro
             <div class="row">
                 <div class="project shadow-large">
                     <div class="project-image">
-                        <img src="images/pulsar.jpeg" style="width: 15vw; height: 22vh;"/>
+                        <img src="images/lb.png" style="width: 15vw; height: 22vh;"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>Identify Pulsar Stars utilizing KNN classification model</h3>
+                        <h3>Bayesian Model for Monitoring Cancer Progression Using Liquid Biopsies</h3>
                         <p>
-                            Pulsars are intensively magnetized, rapidly rotating neutron stars that emit periodic radio frequencies. I preprocessed the dataset HTRU2 and trained
-                            the KNN classifier through cross-validation following the pipeline. At last, I visualized the distribution of original data by ggplot2 and evaluated performance of classifier via confusion matrix.
+                            A Bayesian Network for inferring tumour fraction and clonal prevalences from whole genome sequencing of cell-free DNA (cfDNA) based on genomic alterations (CNAs and SNVs) and Direct Library Preparation (DLP+) of a matched tissue biopsy.
                         </p>
-                        <a href="https://github.com/felix-yuxiang/DataScience-Project-PulsarStar">View Project</a>
+                        <a href="https://github.com/Roth-Lab/LiquidBayes">View Project</a>
                     </div>
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
-
                 <div class="project shadow-large">
                     <div class="project-image">
                         <img src="images/thumb-services-free-service.gif" />
@@ -318,6 +316,22 @@ These awards subsidize professors to hire students to work on their research pro
                     <!-- End .project-info -->
                 </div>
                 <!-- End .project -->
+                <div class="project shadow-large">
+                    <div class="project-image">
+                        <img src="images/pulsar.jpeg" style="width: 15vw; height: 22vh;"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>Identify Pulsar Stars utilizing KNN classification model</h3>
+                        <p>
+                            Pulsars are intensively magnetized, rapidly rotating neutron stars that emit periodic radio frequencies. I preprocessed the dataset HTRU2 and trained
+                            the KNN classifier through cross-validation following the pipeline. At last, I visualized the distribution of original data by ggplot2 and evaluated performance of classifier via confusion matrix.
+                        </p>
+                        <a href="https://github.com/felix-yuxiang/DataScience-Project-PulsarStar">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
             </div>
         </div>
     </div>
@@ -382,6 +396,9 @@ These awards subsidize professors to hire students to work on their research pro
                             <a href="https://github.com/felix-yuxiang/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
+                            <a href="https://www.linkedin.com/in/felix-fu-37b6b7197/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
                             <a href="https://discordapp.com/users/796797977980829696" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a>
                         </li>
                         <li>
@@ -415,7 +432,7 @@ These awards subsidize professors to hire students to work on their research pro
             .typeString('Regard myself as a ML enthusiast and a developer!')
             .pauseFor(2500)
             .deleteChars(49)
-            .typeString('I\'m a 4th year @UBC')
+            .typeString('I\'m a 4th year @UBC CS')
             .pauseFor(2500)
             .start();
         </script>
