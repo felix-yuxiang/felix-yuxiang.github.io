@@ -64,13 +64,18 @@
 }
 
 a {
-  color: #1772d0;
+  color: #037F8C;
+  text-decoration: none;
+}
+
+a.a2 {
+  color: #03A63C;
   text-decoration: none;
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #F299B1;
   text-decoration: none;
 }
 
@@ -90,10 +95,23 @@ strong {
 }
 
 h2 {
-  margin: 0;
-  font-weight: normal;
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+    margin: 0;
+    font-weight: normal;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    border-bottom: 2px solid #037F8C; /* Underline */
+    padding-bottom: 1px; /* Adds spacing between text and underline */
+    display: inline-block; /* Ensures the underline matches the text width */
+}
+
+heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    /* color: #313164; */
+    text-decoration: underline;
+    text-decoration-style: solid;
+    -webkit-text-decoration-color: #ad7020;
+    text-decoration-color: #037F8C;
 }
 
 .papertitle {
@@ -103,10 +121,10 @@ h2 {
 }
 
 .name {
-  padding-top: 20px;
+  padding-top: 25px;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 35px;
 }
 
 .one {
@@ -133,6 +151,12 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+span.bold {
+    font-weight: bold;
+    color: red;
+}
+
 
 .colored-box {
     color: black;
