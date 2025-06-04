@@ -1,0 +1,6 @@
+@inproceedings{fu2025moflow,
+  author    = {Fu, Yuxiang and Yan, Qi and Wang, Lele and Li, Ke and Liao, Renjie},
+  title     = {MoFlow: One-Step Flow Matching for Human Trajectory Forecasting via Implicit Maximum Likelihood Estimation based Distillation},
+  journal   = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  year      = {2025},
+}
