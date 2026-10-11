@@ -1,0 +1,7 @@
+@article{fu2026cdmd,
+  title   = {Consistent Distribution Matching for Data-Free Diffusion Distillation},
+  author  = {Fu, Yuxiang and Yan, Qi and Wu, Zike and Zhang, Yongxing and
+             Abolmaesumi, Purang and Wang, Lele and Liao, Renjie},
+  journal = {arXiv preprint},
+  year    = {2026}
+}
